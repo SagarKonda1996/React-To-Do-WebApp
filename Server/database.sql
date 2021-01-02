@@ -1,4 +1,4 @@
-
+create database assessments;
 use assessments;
 --
 -- Table structure for table `todolist`
