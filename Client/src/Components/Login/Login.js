@@ -5,6 +5,7 @@ import { Constants } from "../../Constants";
 import firebase from "../Firebase";
 import classes from "./login.module.css";
 import Flag from "../Shared/Flag";
+import {Container} from 'react-bootstrap'
 
 const Login = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -49,10 +50,6 @@ const Login = () => {
         size: "invisible",
       }
     );
-    var x = document.getElementById("AuthenticationDiv");
-    setTimeout(() => {
-      x.scrollTop = x.scrollHeight;
-    }, 100);
   }, []);
 
   const isValidPhoneNumber = () => {
@@ -154,17 +151,10 @@ const Login = () => {
   };
 
   return (
-    <section
-      className={`${classes["Login_Home_Page"]} row`}
-      id="AuthenticationDiv"
-      style={{ backgroundColor: "white" }}
-    >
-      <article
-        className="col-5"
-        style={{ backgroundColor: "white !important" }}
-      >
-        <div className={classes["login-container"]}>
-          {captchaVerifier ? (
+    <div className="row" style={{width:'95%',justifyContent:"center",margin:"2%"}}>
+
+     <div className={`col-sm-12 col-md-5 ${classes["login-form"]}`}>
+    {captchaVerifier ? (
             <>
               <h6>Enter verification code sent to</h6>
               <h6>
@@ -218,10 +208,7 @@ const Login = () => {
             </>
           ) : (
             <>
-              <div className={classes["Login-Logo-Container"]}>
-                <h1>To Do List</h1>
-              </div>
-              <div className={classes["login-form"]}>
+              <div >
                 <h6>Enter your phone number</h6>
                 <div className={classes["country-flag"]}>
                   <Flag countrycode={"in"} showDialCode={true}></Flag>
@@ -274,9 +261,10 @@ const Login = () => {
               </div>
             </>
           )}
-        </div>
-      </article>
-    </section>
+  </div>
+  </div>
+
+ 
   );
 };
 

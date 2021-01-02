@@ -3,6 +3,7 @@ import {useEffect,useState} from 'react';
 import AppLayout from "./AppLayout";
 import firebase from './Firebase';
 import Login from './Login'
+import Body from './Body'
 import './App.css'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
@@ -18,12 +19,12 @@ function App() {
           .getAccessToken()
           .then(d => {
             localStorage.setItem('accessToken', d);
-            setContent(<AppLayout/>)
+            setContent(<AppLayout Body={<Body />} isLoggedIn={true}/>)
           })
           .catch(e => console.log(e));
       } else {
         console.log("here")
-        setContent(<Login />);
+        setContent(<AppLayout Body={<Login/>} />);
       }
     });
   }, []);

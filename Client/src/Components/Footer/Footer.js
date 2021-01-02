@@ -1,11 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 const Footer = props => {
     return (
-        <div>
-            Footer
-        </div>
+        <footer className="mastfoot mt-auto" >
+            Made by Sagar Konda
+        </footer>
     )
 }
 

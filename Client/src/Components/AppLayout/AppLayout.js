@@ -1,11 +1,10 @@
 import debounce from "lodash.debounce";
 import React, { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import Body from "../Body";
 import Footer from "../Footer";
 import Header from "../Header";
 
-const AppLayout = (props) => {
+const AppLayout = ({Body,isLoggedIn=false}) => {
   useEffect(() => {
     setVh();
     window.addEventListener("resize", debounce(setVh, 200), false);
@@ -19,8 +18,8 @@ const AppLayout = (props) => {
   };
   return (
     <BrowserRouter>
-      <Header />
-      <Body />
+      <Header isLoggedIn={isLoggedIn}/>
+      {Body}
       <Footer />
     </BrowserRouter>
   );

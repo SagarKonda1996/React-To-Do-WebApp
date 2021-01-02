@@ -1,15 +1,19 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import firebase from '../Firebase'
-const Header = props => {
+const Header = ({isLoggedIn=false}) => {
     return (
          <div className="app-header">
              <span>
                  To Do List
              </span>
+             {
+                 isLoggedIn?
+             
              <Button onClick={e=>firebase.logout()}>
                  Logout
-             </Button>
+             </Button>:null
+             }
         </div>
     )
 }

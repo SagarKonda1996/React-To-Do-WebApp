@@ -10,7 +10,14 @@
   --gray-border: #cccccc;
   --dark-gray: #828282;
 }
-
+footer{
+  background-color: var(--background-dark);
+  color: var(--background-darker);
+  align-items: center;
+  font-size: 80%;
+  display: flex !important;
+  justify-content: center;
+}
 .app-layout {
   display: grid;
   height: 100vh;
