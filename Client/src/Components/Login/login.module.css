@@ -1,0 +1,216 @@
+section{
+    height: 100vh;
+    margin: 0 !important;
+}
+
+.loginContainer{
+    background-color: #fff !important;
+}
+
+section article{
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-background{
+    background-color: var(--login-carousel-background)
+}
+.carousel-container{
+    width: 90%;
+    margin-top: 10% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 0 !important;
+}
+.login-container{
+    width: 70%;
+    text-align: center;
+    background-color: #FFFFFF!important;
+}
+
+.login-form{
+    padding: 10px 20px;
+    box-shadow: 1px 1px 3px 1px #ccc;
+}
+
+.login-container, .carousel-container{
+    margin: auto;
+}
+
+
+.icon-container{
+    min-width: 20px;
+    font-size: 6em;
+    margin-bottom: 0.5em;
+    display: block;
+}
+.description{
+    font-size: 1.3em;
+}
+
+.input-field{
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+
+    border-bottom: solid 2px #ccc;
+    border-radius: 0 !important;
+
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    outline: none;
+}
+
+.input-field:focus{
+    border-bottom: solid 2px #3f51b5;
+    outline: none;
+}
+
+.button-verify{
+    background-color: #3f51b5 !important;
+    color: white !important;
+    margin-top: 10px;
+}
+
+.verify-message{
+    font-size: 0.8em;
+    margin-top: 0.7em;
+    color: #888888;
+}
+
+.tnc-main-container{
+    display: inline-block;
+}
+
+.terms-conditions-container{
+    margin-top: 2em;
+    font-size: 1.1em;
+    /* display: inline-grid; */
+    align-items: flex-start;
+    text-align: center;
+}
+.terms-conditions-checkbox{
+    /* margin: 6px 2px; */
+    margin-right: -38%;
+    /* margin-left: -41%; */
+}
+.terms-conditions-message{
+    text-align: left;
+    display: inline;
+    margin-left: 40%;
+}
+.terms-conditions-error-message{
+    color: red;
+    display: block;
+}
+.terms-conditions-anchor{
+    color: blue;
+}
+.logo{
+   max-width: 100%;
+   max-height: 100%;
+}
+
+.notification-dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px #bbb;
+    background-color: #fff;
+    padding: 1.2em;
+    width: 60%;
+    box-shadow: 1px 1px 9px 1px #ccc;
+    font-size: 1.5em;
+}
+.dialog-message{
+    margin-left: 5px;
+}
+
+.esteemed-customers-container{
+    margin: 1em 0 0 0;
+}
+.esteemed-customers{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.esteemed-customers-header{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1.5em;
+}
+.esteemed-customer-logo-container{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 15px;
+    /* margin: 5px 15px; */
+    margin-top: 15px;
+}
+/* changes made here(width, height) */
+.esteemed-customer-logo{
+    width: 300px; 
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.country-flag{
+    display: flex;
+    align-items: center;
+}
+
+
+.marquee {
+    width: 450px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: ghostwhite;
+    width: 75%;
+    margin-top: 5%;
+    color: #40398a;
+    height: 5%;
+    font-size: x-large;
+    font-weight: 700;
+    border-radius: 2px;
+  }
+  
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    /* show the marquee just outside the paragraph */
+    animation: marquee 15s linear infinite;
+  }
+  
+  .marquee span:hover {
+    animation-play-state: paused
+  }
+  .Login-Logo-Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .Login_Home_Page{
+      height: 100vh;
+      overflow-y: scroll;
+      justify-content: center;
+
+  }
+  .Login-Section{
+
+  }
+  
+  
+  /* Make it move */
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }

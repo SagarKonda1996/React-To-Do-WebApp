@@ -1,0 +1,7 @@
+.flag-container{
+    display: flex;
+    align-items: center;
+}
+.country-dialcode{
+    margin-left: 5px;
+}

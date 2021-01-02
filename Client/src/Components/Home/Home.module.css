@@ -1,0 +1,20 @@
+.sidebar{
+    padding: 0% !important;
+    border-right:1px solid;
+}
+.todolist-container{
+height: 100%;
+padding-top: 1%;
+}
+.button-class{
+border: none;
+width: 100%;
+padding: 5%;
+background:none;
+display: flex;
+justify-content: flex-start;
+}
+.selected-item{
+color: var(--theme-color);
+font-weight: bolder;
+}
